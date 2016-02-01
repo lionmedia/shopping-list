@@ -1,0 +1,89 @@
+html { 
+  background: url(../images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	font-family: 'Shadows Into Light';
+
+}
+
+.container {
+	width: 650px;
+	min-height: 300px;
+	background-color:#FFF;
+	opacity: 0.7;
+	margin-top:50px;
+	margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding: 0 10px;
+}
+
+h1 {
+
+	text-align: center;
+	font-weight: bold;
+	font-size: 48px;
+}
+
+.input {
+	text-align: center;
+}
+
+#item-input {
+	text-align: center;
+	width: 300px;
+	margin-right: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	color: red;
+}
+
+#item-numb {
+	text-align: center;
+	width: 30px;
+	font-size: 18px;
+	font-weight: bold;
+	color: red;
+}
+
+.item-list {
+	font-size: 18px;
+	font-weight: bold;
+    padding-bottom: 50px;
+}
+
+ .item-list li {
+ 	list-style: none;
+    list-style-type: none;
+    margin: 5px;
+
+}
+
+#item-check {
+	width: 30px;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  	color: red;
+  	font-size:18px;
+  	font-weight: bold;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: red;
+  font-size:16px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: red;
+  opacity: 1;
+  font-size:16px;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: red;
+  opacity: 1;
+  font-size:16px;
+}
