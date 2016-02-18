@@ -20,7 +20,7 @@ $( document ).ready(function() {
 			alert('Please enter a grocery list item');
 		} else {
 
-			$('<li id="item"></li>').appendTo('#item-list').html('<div id="item-check"><i class="fa fa-check"></i></div><div id="item-delete"><i class="fa fa-times"></i></div><span>' + txtval + '</span></li>');
+			$('<li id="item"></li>').appendTo('#item-list').html('<div id="item-check"><i class="fa fa-check"></i></div><div id="item-delete"><i class="fa fa-times"></i></div><span>' + txtval + '</span><div style="clear:both;"></div></li>');
 
 
 		document.getElementById('item-name').value = '';
@@ -33,10 +33,11 @@ $( document ).ready(function() {
 	});
 
 //delete list items
-	$('#item-list').on('click', '#box-delete', function(e){e.preventDefault(); $(this).parent().remove()});
+	$('#item-list').on('click', '#item-delete', function(e){e.preventDefault(); $(this).parent().remove()});
 
 //cross off list items
-	$('#item-list').on('click', '#item', 'span', function(){$(this).toggleClass('strike'); $(this).children('#item').toggleClass('checked'); });
+	$('#item-list').on('click', '#item', 'span', function(){$(this).toggleClass('strike'); $(this).children('#item').toggleClass('checked'); 
+ });
 
 });
 
