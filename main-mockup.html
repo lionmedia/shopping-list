@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tracey's Shopping List</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+	<!--<script src="js/app.js"></script>-->
+	
+</head>
+<body>
+	<div class="container">
+		<div class="input">
+			<h1>Shopping List</h1>
+				<form>
+				<input id="item-name" placeholder="Add items here">
+					</input>
+					<!--<input id="item-numb" placeholder="Qty" value="1"></input>-->
+				<button type="submit" id="add"><i class="fa fa-plus"></i></button>&nbsp;<button type="reset"><i class="fa fa-refresh"></i></button>
+				</form>
+				
+			<h2>(Drag and Drop Items to Reorder Your List)</h2>
+				<div class="item-container">
+					<ul id = "item-list">
+						
+					</ul>
+				</div>
+
+		</div>
+	</div>
+	
+</body>
+</html>
